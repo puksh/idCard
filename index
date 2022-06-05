@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL" id=html>
+    <head>
+        <link rel=stylesheet type="text/css" href="style.css">
+		<script src="spring.js"></script>
+        <title> id </title>
+        <meta charset="UTF-8">
+    </head>
+    <!-- 
+	nice webpage remember it
+	https://www.colorabout.com/
+	-->
+    <body>
+		<div class="row top center">
+			<img class="img_bar marg" onclick="okay(id_card);" src="id_icon.png">
+			<img class="img_bar marg" onclick="okay(credit_card);" src="credit_card_icon.png">
+			<img class="img_bar marg" onclick="okay(id_card);" src="id_icon.png">
+		</div>
+		<div id=field class=column>
+			<div class="column field2" id=id_card>
+				<form action="php.php" method="get">
+					<div id=front class=row>
+						<div class=column>
+							<div class="row bot">
+								<img class=herb src="Herb_Polski.svg">
+								<div class="column marg bord">
+									<div class="row bot h">
+										<p> Rzeczpospolita Polska <p class="smaller marg_l"> Republic of Poland</p></p>
+									</div>
+									<div class="row bot h">
+										<p> Dowod osobisty <p class="smaller marg_l"> Identity card</p></p>
+									</div>
+								</div>
+								<p class="pp1"> PP </p>
+							</div>
+							<div class="row bot">
+								<img class=prof src='id.png'>
+								<div class="column info1">
+									<div class=column>
+										<p class=small>NAZWISKO/SURNAME </p> 
+										<input name=surname type=text placeholder="KOWALSKI">
+									</div>
+									<div class=column>
+										<p class=small>IMIONA/GIVEN NAMES: </p> 
+										<input name=name type=text placeholder="DAWID JACOB">
+									</div>
+									<div class=column>
+										<p class=small>NAZWISKO RODOWE / FAMILY NAME: </p> 
+										<input name=family_name type=text placeholder=KOWALSKI>
+									</div>
+									<div class=column>
+										<p class=small>IMIONA RODZICOW / PARENTS' GIVEN NAMES: </p> 
+										<input name=parents_names type=text placeholder="CAROL MARIA">
+									</div>
+									<div class=row>
+										<div class=column>
+										<p class=small>DATA URODZENIA / DATE OF BIRTH </p> 
+										<input name=dob type=text placeholder="01.01.2000">
+										</div>
+										<div class=column>
+											<p class=small> PLEC / SEX </p> 
+											<input name=sex id=sex type="text" placeholder="F">
+										</div>
+									</div>
+								</div>
+								<img class=small_img src='id.png'>
+							</div>
+						</div>
+					</div>
+					<div id=back class="back column">
+						<div class="row marg_l">
+							<div class="row marg">
+								<p class=pp> PP </p>
+								<div id=info2 class="column">
+									<p class=small>NUMER PESEL / PERSONAL NUMBER </p> 
+									<input name=pesel id=pesel type=text placeholder=00000000000>
+									<p class=small>OBYWATELSTWO / NATIONALITY </p> 
+									<input name=nationality id=nationality type=text placeholder=JAPONSKIE>
+								</div>
+								<img id=kontur class=marg src='kontur.png'>
+								<div class="column marg_l">
+									<p class="small">NUMER DOWODU OSOBISTEGO / </p><br>
+									<p class="small">IDENTITY CARD NUMBER </p>
+									<input name=id_num type=text placeholder="ARG 696969">
+								</div>
+							</div>
+						</div>
+						<div class=row>
+							<div class="column marg_l">
+								<p class=small>MIEJSCE URODZENIA / PLACE OF BIRTH </p>
+								<input name=pob type=text placeholder=SIANOWSKO>
+								<p class=small>ORGAN WYDAJACY / ISSUING AUTHORITY </p> 
+								<input name=ia class=l type=text placeholder="PREZYDENT KTOREGOS MIASTA">
+							</div>
+							<div class="row botto">
+								<div class="column marg_l2">
+									<p class="small">DATA WYDANIA / </p><br>
+									<p class="small" >DATE OF ISSUE </p>
+									<input name=issue  class=snail type=text placeholder="26.07.2019">
+									<p class="small">DATA WAZNOSCI / </p><br>
+									<p class="small">EXPIRY DATE </p>
+									<input name=expiry  class=snail type=text placeholder="26.07.2029">
+								</div>
+								<img class=small_img src='id.png'>
+							</div>
+						</div>
+						<div class=bottom_field>
+							<input class=bottom_item id=can type=text placeholder="2HhMxMc)sx6rxG=_7:%&mA+HmLP@vv">
+							<input class=bottom_item id=can type=text placeholder="*jz(_3L3Y+=--N]H!%TK{E<7+J-RcP">
+							<input class=bottom_item id=can type=text placeholder="zeazfN:LM;@!5BG8br#NBH2:g:h),H">
+						</div>
+					</div>
+					<div class=field2>
+						<button type=submit>Submit
+					</div>
+				</form>
+			</div>
+		</div>
+    </body>
+    <footer class=footer>
+	
+	</footer>
+</html>
