@@ -18,7 +18,7 @@
 		</div>
 		<div id=field class=column>
 			<div class="column field2" id=id_card>
-				<form action="php.php" method="get">
+				<form action="php.php" method="post">
 					<div id=front class=row>
 						<div class=column>
 							<div class="row bot">
@@ -38,28 +38,32 @@
 								<div class="column info1">
 									<div class=column>
 										<p class=small>NAZWISKO/SURNAME </p> 
-										<input name=surname type=text placeholder="KOWALSKI">
+										<input name=surname type=text placeholder="KOWALSKI" maxlength="12">
 									</div>
 									<div class=column>
 										<p class=small>IMIONA/GIVEN NAMES: </p> 
-										<input name=name type=text placeholder="DAWID JACOB">
+										<input name=name type=text placeholder="DAWID JACOB" maxlength="12">
 									</div>
 									<div class=column>
 										<p class=small>NAZWISKO RODOWE / FAMILY NAME: </p> 
-										<input name=family_name type=text placeholder=KOWALSKI>
+										<input name=family_name type=text placeholder="KOWALSKI" maxlength="12">
 									</div>
 									<div class=column>
 										<p class=small>IMIONA RODZICOW / PARENTS' GIVEN NAMES: </p> 
-										<input name=parents_names type=text placeholder="CAROL MARIA">
+										<input class=sml name=parents_names type=text placeholder="CAROL MARIA" maxlength="21">
 									</div>
 									<div class=row>
 										<div class=column>
 										<p class=small>DATA URODZENIA / DATE OF BIRTH </p> 
-										<input name=dob type=text placeholder="01.01.2000">
+										<input name=dob type=text placeholder="01.01.2000" maxlength="10">
 										</div>
 										<div class=column>
 											<p class=small> PLEC / SEX </p> 
-											<input name=sex id=sex type="text" placeholder="F">
+											<select name=sex id=sex type="text" placeholder="F">
+											<option name=sex id=sex type="text" placeholder="F" value="F">F</option>
+											<option name=sex id=sex type="text" placeholder="M" value="M">M</option>
+											<option name=sex id=sex type="text" placeholder="-" value="-">-</option>
+											</select>
 										</div>
 									</div>
 								</div>
@@ -73,33 +77,33 @@
 								<p class=pp> PP </p>
 								<div id=info2 class="column">
 									<p class=small>NUMER PESEL / PERSONAL NUMBER </p> 
-									<input name=pesel id=pesel type=text placeholder=00000000000>
+									<input name=pesel id=pesel maxlength="11" type=text placeholder=00000000000>
 									<p class=small>OBYWATELSTWO / NATIONALITY </p> 
-									<input name=nationality id=nationality type=text placeholder=JAPONSKIE>
+									<input name=nationality id=nationality type=text placeholder=JAPONSKIE maxlength="14">
 								</div>
 								<img id=kontur class=marg src='kontur.png'>
 								<div class="column marg_l">
 									<p class="small">NUMER DOWODU OSOBISTEGO / </p><br>
 									<p class="small">IDENTITY CARD NUMBER </p>
-									<input name=id_num type=text placeholder="ARG 696969">
+									<input name=id_num type=text placeholder="ARG696969" maxlength="9">
 								</div>
 							</div>
 						</div>
 						<div class=row>
 							<div class="column marg_l">
 								<p class=small>MIEJSCE URODZENIA / PLACE OF BIRTH </p>
-								<input name=pob type=text placeholder=SIANOWSKO>
+								<input name=pob type=text placeholder=SIANOWSKO maxlength="12">
 								<p class=small>ORGAN WYDAJACY / ISSUING AUTHORITY </p> 
-								<input name=ia class=l type=text placeholder="PREZYDENT KTOREGOS MIASTA">
+								<input name=ia class=l type=text placeholder="PREZYDENT KTOREGOS MIASTA" maxlength="27">
 							</div>
 							<div class="row botto">
 								<div class="column marg_l2">
 									<p class="small">DATA WYDANIA / </p><br>
 									<p class="small" >DATE OF ISSUE </p>
-									<input name=issue  class=snail type=text placeholder="26.07.2019">
+									<input name=issue  class=snail type=text placeholder="26.07.2019" maxlength="10">
 									<p class="small">DATA WAZNOSCI / </p><br>
 									<p class="small">EXPIRY DATE </p>
-									<input name=expiry  class=snail type=text placeholder="26.07.2029">
+									<input name=expiry  class=snail type=text placeholder="26.07.2029" maxlength="10">
 								</div>
 								<img class=small_img src='id.png'>
 							</div>
@@ -114,6 +118,9 @@
 						<button type=submit>Submit
 					</div>
 				</form>
+			</div>
+			<div class="column field2" id=credit_card>
+				
 			</div>
 		</div>
     </body>
