@@ -2,6 +2,9 @@
 
 This project is a web-based Polish ID card generator that allows users to input personal information and generate a visual representation of a Polish identity card.
 
+![image](https://github.com/user-attachments/assets/45d7e09a-d29c-47d3-a595-ee2261f19495)
+
+
 ## Features
 
 - Interactive form to input personal details
