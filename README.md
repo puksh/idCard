@@ -1,6 +1,6 @@
 # ID Card Generator
 
-This project is a web-based Polish ID card generator that allows users to input personal information and generate a visual representation of a Polish identity card.
+This project is a web-based Polish ID card generator that allows users to input personal information and send it further through PHP.
 
 ![image](https://github.com/user-attachments/assets/807138f2-2287-4992-aa19-1a6950d6ffff)
 
