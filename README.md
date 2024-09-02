@@ -23,9 +23,8 @@ This project is a web-based Polish ID card generator that allows users to input 
 
 - `index.html`: Main HTML file containing the structure of the ID card generator
 - `style.css`: CSS file for styling the application
-- `spring.js`: JavaScript file for handling interactions (not provided in the snippet)
-- `php.php`: PHP file for processing form submissions (not provided in the snippet)
-
+- `spring.js`: JavaScript file for handling interactions
+- `php.php`: PHP file for processing form submissions
 ## Notes
 
 - This project uses placeholder images and some external resources. Ensure you have an active internet connection for proper rendering.
